@@ -13,6 +13,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;  
+    align-content: center;
     
 }
 .box1 {
@@ -22,25 +23,21 @@ body{
  
 
 }
-.box3  {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
 
-}
 nav{
     background-color:antiquewhite;
 }
 
-    
-
 .box2 {
     height: 200px;
     width: 300px;  
-    overflow: visible;
+    
     display: flex;
     flex-direction: row;
+    align-items: start;
 }
+
+
 .box2{
    
     border: 4px solid black;
@@ -74,11 +71,15 @@ a{
 #pie_items{
     background-color: aqua;
     margin-top: 100px;
+    display: flex;
+}
+.cajita1{
+    display: flex;
+    flex-direction: row;
+    align-content: start;
 }
 
-#pie_items div{
-    display: inline-block;
-}
+
 #pie_items h4{
     color: #bd9d53;
 }
@@ -92,10 +93,17 @@ a{
   
 }
 .cajita2{
-    margin-left: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .cajita3{
-    padding-left: 250px;
+   display: flex;
+   flex-direction: row;
+}
+
+form label input{
+    background-color: aqua;
 }
 
 footer{
@@ -108,7 +116,7 @@ footer p{
 
 ol li{
     background-color: aqua;
-    display: inline;   
+    display: flex;   
 }
 div h3{
     color: #bd9d53;
@@ -121,3 +129,21 @@ div h3{
 #nuestrosPanes img{
     width: 1000px;
 }   
+
+#productos{
+    display: grid;
+    grid-template-areas: 
+    "facturas facturas facturas"
+    "masitas masitas masitas"
+    "pastafrolas pastafrolas pastafrolas";
+    
+}
+.facturas{
+    grid-area: facturas;
+}
+.masitas{
+    grid-area: masitas;
+}
+.pastafrolas{
+    grid-area: pastafrolas;
+}
